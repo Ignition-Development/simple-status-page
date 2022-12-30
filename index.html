@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Status Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <h1 class="title is-1">Status Page</h1>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/incidents">Incidents</a>
+        <a class="navbar-item" href="/components">Components</a>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary" href="/subscribe">
+              <strong>Subscribe</strong>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero is-primary is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Welcome to the Status Page
+        </h1>
+        <h2 class="subtitle">
+          Here you can find the current status of our services and any known incidents.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-4">
+          <h3 class="title is-3">Current Status</h3>
+          <div class="notification is-success">
+            All systems are operating normally.
+          </div>
+          <h3 class="title is-3">Recent Incidents</h3>
+          <div class="card">
+            <div class="card-content">
+              <p class="title">
+                Incident - Service Interruption
+              </p>
+              <p class="subtitle">
+                2021-01-01 12:00:00 - 2021-01-01 13:00:00
+              </p>
+              <p>
+                We experienced a service interruption due to a network issue. The issue was quickly resolved and all services have been restored. We apologize for any inconvenience this may have caused.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <p class="title">
+              Incident - Server Maintenance
+            </p>
+            <p class="subtitle">
+              2022-01-01 08:00:00 - 2022-01-01 09:00:00
+            </p>
+            <p>
+              We will be performing maintenance on one of our servers. The server will be offline for approximately 1 hour. We apologize for any inconvenience this may cause.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4">
+        <h3 class="title is-3">System Components</h3>
+        <table class="table is-striped is-fullwidth">
+          <thead>
+            <tr>
+              <th>Component</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Server 1</td>
+              <td class="has-text-success">Operational</td>
+            </tr>
+            <tr>
+              <td>Server 2</td>
+              <td class="has-text-success">Operational</td>
+            </tr>
+            <tr>
+              <td>Database</td>
+              <td class="has-text-success">Operational</td>
+            </tr>
+            <tr>
+              <td>API</td>
+              <td class="has-text-success">Operational</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Status Page</strong> by IGH.
+    </p>
+    <p>
+      <a class="icon" href="https://github.com/Ignition-Development">
+        <i class="fab fa-github"></i>
+      </a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>
